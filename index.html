@@ -1,100 +1,118 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>Minha Página Pessoal</title>
-  <style>
-body {
-  font-family: "Roboto", sans-serif;
-  background-color: #f5f5f5;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-header {
-  background-color: #000000;
-  color: white;
-  padding: 20px 0;
-}
-section {
-   
-  padding: 10px;
-  background: white;
-  margin: 10px;
-  border-radius: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-p {
-  font-size: 1.2rem;
-}
-img {
-  max-width: 250px;
-  border-radius: 50%;
-}
-a {
-  color: #2d2f97;
-  text-decoration: none;
-  font-family: "Roboto", sans-serif;
-}
-h1,
-h2,
-h3,
-h4 {
-  font-family: "Poppins", sans-serif;
-}
-.container {
-  margin-top: 10px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página Pessoal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Estilos gerais */
+        body {
+            font-family: "Roboto", sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
 
-}
+        h1, h2, h3, h4 {
+            font-family: "Poppins", sans-serif;
+        }
 
-.title {
-  margin-bottom: 0px;
-  font-size: 3rem;
-}
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
-  height: 400px;
-}
+        a {
+            color: #2d2f97;
+            text-decoration: none;
+        }
 
-  </style>
+        header {
+            background-color: #000000;
+            color: white;
+            padding: 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            height: 400px;
+        }
+
+        section {
+            padding: 10px;
+            background: white;
+            margin: 10px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+
+        img {
+            max-width: 250px;
+            border-radius: 50%;
+        }
+        
+        .container {
+            margin-top: 10px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        .title {
+            margin-bottom: 0px;
+            font-size: 3rem;
+        }
+
+        /* Otimização responsiva para telas menores (smartphones) */
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                height: auto;
+                gap: 20px;
+            }
+
+            .container {
+                grid-template-columns: 1fr; /* Coloca os elementos um abaixo do outro */
+            }
+
+            .title {
+                font-size: 2rem;
+            }
+        }
+    </style>
 </head>
 <body>
-<header class="header">
-      <img src="https://github.com/thnnovaes/minha_foto/blob/main/minha_foto.jpeg?raw=true" alt="Minha Foto">
-      <div>
-        <h1 class="title">Olá, eu sou Thiago!</h1>
-        <p>Estudante de Análise e Desenvolvimento de Sistemas.</p>
-      </div>
+    <header>
+        <img src="https://github.com/thnnovaes/minha_foto/blob/main/minha_foto.jpeg?raw=true" alt="Minha Foto">
+        <div>
+            <h1 class="title">Olá, eu sou Thiago!</h1>
+            <p>Estudante de Análise e Desenvolvimento de Sistemas.</p>
+        </div>
     </header>
-  <div class="container">
-    
-    <section>
-      <h2>Sobre mim</h2>
-      <p>Sou técnico em eletrônica migrando para a área de programação. Tenho interesse em <strong>Python, Kotlin e Front-end</strong>.</p>
-    </section>
+    <div class="container">
+        <section>
+            <h2>Sobre mim</h2>
+            <p>Sou técnico em eletrônica migrando para a área de programação. Tenho interesse em <strong>Python, Kotlin e Front-end</strong>.</p>
+        </section>
 
-  <section>
-    <h2>Projetos</h2>
-    <ul>
-      <li><a href="#">Calculadora em JavaScript</a></li>
-      <li><a href="#">API de Filmes em Python</a></li>
-      <li><a href="#">App de Android em Kotlin</a></li>
-    </ul>
-  </section>
+        <section>
+            <h2>Projetos</h2>
+            <ul>
+                <li><a href="#">Calculadora em JavaScript</a></li>
+                <li><a href="#">API de Filmes em Python</a></li>
+                <li><a href="#">App de Android em Kotlin</a></li>
+            </ul>
+        </section>
 
-  <section>
-    <h2>Contato</h2>
-    <p>📧 thnnovaes@gmail.com</p>
-    <p><a href="https://github.com/thnnovaes" target="_blank">Meu GitHub</a></p>
-  </section>
-</div> 
-
-  
+        <section>
+            <h2>Contato</h2>
+            <p>📧 thnnovaes@gmail.com</p>
+            <p><a href="https://github.com/thnnovaes" target="_blank">Meu GitHub</a></p>
+        </section>
+    </div> 
 </body>
 </html>
